@@ -62,7 +62,7 @@ class TasksController extends Controller
             'status' => $request->status,
         ]);
 
-        return back();
+        return redirect('/');
     }
     /**
      * Display the specified resource.
@@ -130,6 +130,6 @@ class TasksController extends Controller
             $task->delete();
         }
 
-        return back();
+        return redirect('/');
     }
 }
